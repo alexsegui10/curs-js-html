@@ -25,6 +25,37 @@
   <main>
     <p>Aquest curs explica com modificar elements HTML i CSS amb JavaScript.</p>
   </main>
+    <section id="contingut">
+      <h2>Modificar Contingut HTML</h2>
+      <p id="text">Aquest és un text inicial.</p>
+      <button onclick="document.getElementById('text').innerText='Text canviat!'">
+        Canvia el text
+      </button>
+      <p><em>Explicació:</em> Amb <code>innerText</code> seleccionem l’element i canviem el seu contingut.</p>
+      <p><strong>Millora:</strong> Ara aquest text mostra informació addicional gràcies al hotfix.</p>
+    </section>
+	<!-- Cambio para el 2 commit -->
+    <section id="atributs">
+      <h2>Modificar Atributs HTML</h2>
+      <img id="imatge" src="https://via.placeholder.com/200x120.png?text=Imatge+1" width="200">
+      <br><br>
+      <button onclick="document.getElementById('imatge').src='https://via.placeholder.com/200x120.png?text=Imatge+2'">
+        Canvia la imatge
+      </button>
+      <p><em>Explicació:</em> Amb <code>.src</code> modifiquem l’atribut <code>src</code> de la imatge.</p>
+    </section>
+ 	<!-- Cambio para el 2 commit -->
+    <section id="estils">
+      <h2>Modificar Estils CSS</h2>
+      <p id="paragraf">Aquest text canviarà d’estil.</p>
+      <button onclick="document.getElementById('paragraf').style.color='red'">
+        Canvia color a roig
+      </button>
+      <button onclick="document.getElementById('paragraf').style.fontSize='24px'">
+        Fes el text més gran
+      </button>
+      <p><em>Explicació:</em> Amb <code>style.color</code> i <code>style.fontSize</code> podem canviar els estils de l’element.</p>
+    </section>
   <footer>
     <p>Footer del sitio</p>
   </footer>
