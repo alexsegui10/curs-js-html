@@ -25,6 +25,14 @@
   <main>
     <p>Aquest curs explica com modificar elements HTML i CSS amb JavaScript.</p>
   </main>
+    <section id="contingut">
+      <h2>Modificar Contingut HTML</h2>
+      <p id="text">Aquest és un text inicial.</p>
+      <button onclick="document.getElementById('text').innerText='Text canviat!'">
+        Canvia el text
+      </button>
+      <p><em>Explicació:</em> Amb <code>innerText</code> seleccionem l’element i canviem el seu contingut.</p>
+    </section>
   <footer>
     <p>Footer del sitio</p>
   </footer>
